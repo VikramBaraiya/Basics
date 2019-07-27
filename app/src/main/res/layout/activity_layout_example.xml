@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayoutExample">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:id="@+id/imagelayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/homeimage"
+            android:src="@drawable/jlbg"
+            android:scaleType="fitXY"/>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/movieicon"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="160dp"
+        app:layout_constraintStart_toStartOf="@+id/imagelayout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/jlicon"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imagelayout"
+        app:layout_constraintStart_toEndOf="@id/movieicon"
+        android:text="IMDB : "
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/imbd"/>
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imdbrating"
+        app:layout_constraintTop_toBottomOf="@id/imagelayout"
+        app:layout_constraintStart_toEndOf="@id/imbd"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/design_default_color_primary"
+        android:text="8.2"
+        />
+
+    <EditText
+        android:id="@+id/moviedesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imbd"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:text="@string/moviedesc"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/commentssection"
+        app:layout_constraintTop_toBottomOf="@id/moviedesc"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/commentorname"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/colorAccent"
+            android:text="Vik Ahir :"/>
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/comment"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/colorPrimary"
+            android:text="a must watch movie if you are a sci fi fan... all heros come together to save the planet "/>
+
+    </LinearLayout>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/commentssection"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/videoplayll"
+        android:orientation="vertical">
+<android.support.v7.widget.AppCompatButton
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="play"
+    android:id="@+id/playtrailer"
+    />
+        <VideoView
+            android:id="@+id/trailer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+</android.support.constraint.ConstraintLayout>

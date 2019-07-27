@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Learning Android </string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="moviedesc">"Justice League is a 2017 American superhero film based on the DC Comics superhero team of the same name, distributed by Warner Bros. Pictures. It is the follow-up to 2016's Batman v Superman: Dawn of Justice and the fifth installment in the DC Extended Universe (DCEU)."</string>
+
+    <string-array name="content">
+
+        <item>Layout</item>
+        <item name="actv" type="id">AutoComplete TetBox</item>
+        <item>Spinner</item>
+        <item>Radio</item>
+        <item>Checkbox</item>
+        <item>Progress Bar</item>
+        <item>Scroll View</item>
+        <item>Toggle</item>
+        <item>Switch</item>
+        <item>WEbview</item>
+        <item>Intent</item>
+        <item>Intent Filter</item>
+        <item>Rating Bar</item>
+        <item>Fragments</item>
+        <item>Fragment Communication</item>
+        <item>Data transfer F2F</item>
+        <item>Data TRansfer F2A</item>
+        <item>data transfer A2F</item>
+        <item>data transfer A2A</item>
+        <item>data transfer F2A-A2F</item>
+        <item>Services</item>
+        <item>Broadcast Receivers</item>
+        <item>Kotlin</item>
+        <item>Notification</item>
+        <item>Permission</item>
+        <item>reading file </item>
+        <item>sql Data helper</item>
+        <item>room Database</item>
+        <item>Retrofit Api</item>
+    </string-array>
+    <string-array name="id" type="id">
+
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vikram_baraiya">Vikram Baraiya</string>
+    <string name="android_programing">Android Programing</string>
+</resources>
